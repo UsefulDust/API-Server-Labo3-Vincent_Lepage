@@ -1,0 +1,118 @@
+body {
+    background-image: linear-gradient(137deg,red, pink, white, rgb(7, 189, 239), blue);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    min-width: 490px;
+    margin: auto;
+    background-color: rgb(188, 188, 188);
+    height: 100vh;
+    border: 1px solid rgb(101, 101, 101);
+}
+
+.headerPanel {
+    flex:0.5;
+    background-image: linear-gradient(180deg, lightgray, gray);
+    padding:5px;
+}
+
+.scrollContainer {
+    overflow-y: scroll;
+    flex:12;
+    border-top: 1px solid lightgray;
+}
+
+.header {
+    width: 100%;
+    font-size: 26px;
+    color:rgb(55, 55, 55);
+    font-weight: bold;
+    text-align: center;
+}
+
+#searchBar {
+    padding-top:10px;
+    display: none;
+    margin: 5px;
+    border-top: 1px solid lightgray;
+}
+
+#nouvellesList {
+    width: 100%;
+    padding: 10px;
+}
+
+.favicon {
+    height: 24px;
+    margin: 8px;
+}
+
+.headerLayout {
+    display: grid;
+    grid-template-columns: 50px auto 35px 35px 19px;
+    align-items: center;
+
+}
+.searchBarLayout {
+    display: grid;
+    grid-template-columns: 0.5fr 40px 1fr 35px 35px 16px;
+    align-items: center;
+
+}
+
+.nouvelleRow:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+.cmd {
+    cursor: pointer;
+    font-size: 30px !important;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+}
+
+.cmd:hover {
+    color: rgb(2, 166, 221);
+}
+
+.cmd:active {
+    color: lightblue;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: small;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.title {
+    font-weight: bold;
+    color: blue;
+}
+
+.bottomArticleStyle {
+    font-size: 12px;
+    margin-left: 20px;
+    color: darkblue;
+}
+
+#interactionButton {
+    margin-left: 20px;
+}
+
+.imageNouvelle {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-right: 12px;
+}
